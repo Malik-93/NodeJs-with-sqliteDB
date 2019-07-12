@@ -1,0 +1,21 @@
+{
+  "name": "it_360_academy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+    "scripts": {
+      "client-install": "npm install --prefix client",
+      "start": "node server.js",
+      "server": "nodemon server.js",
+      "client": "npm start --prefix client",
+      "dev": "concurrently \"npm run server\" \"npm run client\""
+    },
+  "author": "Mudassir_Malik",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "md5": "^2.2.1",
+    "sqlite3": "^4.0.9"
+  }
+}
